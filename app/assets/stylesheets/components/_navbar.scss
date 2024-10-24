@@ -2,15 +2,49 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  height: 60px;
   width: 100%;
-  padding: 0px 8px;
+  padding: 8px 40px;
   background-color: rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid white;
   position: fixed;
   top: 0;
-  overflow: hidden;
+  overflow: visible;
 }
 
 .navbar-logo {
   width: 40px;
+}
+
+.navbar-link, .navbar-menu {
+  text-decoration: none;
+  color: white;
+  margin: 0;
+  font-family: "Iceland", sans-serif;
+  font-size: 24px;
+}
+
+.navbar-menu:hover {
+  color: white !important;
+}
+
+.navbar-menu-content {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: white;
+}
+
+@media(max-width: 800px) {
+  .navbar-link {
+    display: none;
+  }
+
+  .navbar-menu {
+    display: show;
+  }
+}
+
+@media(min-width: 801px) {
+  .navbar-menu {
+    display: none;
+  }
 }

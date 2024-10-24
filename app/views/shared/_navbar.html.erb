@@ -1,3 +1,28 @@
 <div class="navbar-avsf">
   <%= link_to (image_tag("avsf_logo.png", alt: "AVSF Logo", class: "navbar-logo")), root_path %>
+  <%= link_to "Episodes", root_path, class: "navbar-link" %>
+  <span class="navbar-link">|</span>
+  <%= link_to "Donate", root_path, class: "navbar-link" %>
+  <span class="navbar-link">|</span>
+  <%= link_to "Join the Show", root_path, class: "navbar-link" %>
+  <span class="navbar-link">|</span>
+  <%= link_to "Contact", root_path, class: "navbar-link" %>
+  <span class="navbar-link">|</span>
+  <%= link_to "About", root_path, class: "navbar-link" %>
+  <div class="dropdown">
+    <button class="btn dropdown-toggle navbar-menu" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      ☰
+    </button>
+    <div class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton1">
+      <%= link_to "Episodes", root_path, class: "dropdown-item" %>
+      <span class="navbar-link">|</span>
+      <%= link_to "Donate", root_path, class: "dropdown-item" %>
+      <span class="navbar-link">|</span>
+      <%= link_to "Join the Show", root_path, class: "dropdown-item" %>
+      <span class="navbar-link">|</span>
+      <%= link_to "Contact", root_path, class: "dropdown-item" %>
+      <span class="navbar-link">|</span>
+      <%= link_to "About", root_path, class: "dropdown-item" %>
+    </div>
+  </div>
 </div>
