@@ -12,4 +12,12 @@
 </div>
 <div class="episode-index">
   <h3>Latest Episodes</h3>
+  <div class="episode-index">
+    <% @episodes.each do |episode| %>
+      <div class="episode-card">
+        <h5><%= episode.title %></h5>
+        <%= episode.preview_text %>
+      </div>
+    <% end %>
+  </div>
 </div>

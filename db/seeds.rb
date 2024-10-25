@@ -7,3 +7,16 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require 'faker'
+
+puts "warming the syrup..."
+Episode.destroy_all
+puts "Contact Dr. Jemima..."
+10.times do
+Episode.create!(
+  title: Faker::TvShows::Simpsons.character,
+  preview_text: Faker::TvShows::Simpsons.quote
+)
+end
+puts "Oh my god my waffle!"
