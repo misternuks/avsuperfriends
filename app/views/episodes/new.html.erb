@@ -1,0 +1,19 @@
+<%= simple_form_for(@episode) do |f| %>
+  <% if @episode.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@episode.errors.count, "error") %> prohibited this episode from being saved:</h2>
+      <ul>
+        <% @episode.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.input :title, label: "Episode Title" %>
+  <%= f.input :preview_text, label: "Preview Text", as: :text %>
+  <%= f.input :description, label: "Description", as: :text %>
+  <%= f.input :libsyn_embed_url, label: "Libsyn Embed URL" %>
+  <%= f.input :published_at, as: :datetime, label: "Publish Date" %>
+  <%= f.input :thumbnail, as: :file, label: "Upload Thumbnail Image" %>
+  <%= f.submit "Save Episode", class: "btn btn-primary" %>
+<% end %>

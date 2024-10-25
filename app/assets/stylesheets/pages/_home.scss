@@ -1,13 +1,29 @@
 // Specific CSS for your home-page
-.episode-index {
+.episode-container {
   width: 100%;
   height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 32px;
   background-color: #444;
   color: white;
-  padding: 0 64px;
+  gap: 32px;
+}
+
+.episode-heading {
+  width: 100%;
+  text-align: left;
+  font-family: "Iceland", sans-serif;
+  font-size: 48px;
+  margin: 0;
+}
+
+.episode-index {
   display: flex;
-  justify-content: baseline;
-  align-items: baseline;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 32px;
 }
@@ -15,12 +31,12 @@
 .episode-card {
   width: 400px;
   height: 240px;
-  padding: 32px;
   background-color: white;
   color: #444;
   border: 1px solid #333;
   border-radius: 8px;
   box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 8px 16px;
 
 }
 

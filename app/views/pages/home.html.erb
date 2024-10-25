@@ -10,13 +10,14 @@
     <%= link_to "Listen now", root_path, class: "outline-button"  %>
   </div>
 </div>
-<div class="episode-index">
-  <h3>Latest Episodes</h3>
+<div class="episode-container">
+  <h3 class="episode-heading">Latest Episodes</h3>
   <div class="episode-index">
     <% @episodes.each do |episode| %>
       <div class="episode-card">
         <h5><%= episode.title %></h5>
         <%= episode.preview_text %>
+        <%= cl_image_tag episode.thumbnail.key if episode.thumbnail.present? %>
       </div>
     <% end %>
   </div>

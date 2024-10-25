@@ -53,6 +53,8 @@ gem "sassc-rails"
 
 # My gems
 gem "faker"
+gem 'cloudinary'
+gem 'activestorage-cloudinary-service'
 
 group :development, :test do
   gem "dotenv-rails"
