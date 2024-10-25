@@ -4,49 +4,59 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   padding: 64px 32px;
   background-color: #444;
   color: white;
-  gap: 32px;
+  gap: 8px;
 }
 
 .episode-heading {
   width: 100%;
   text-align: left;
-  font-family: "Iceland", sans-serif;
-  font-size: 48px;
+  font-family: "Tiny5", sans-serif;
+  font-size: 32px;
   margin: 0;
 }
 
 .episode-index {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: start;
+  align-items: start;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 4px;
 }
 
 .episode-card {
-  width: 400px;
-  min-height: 400px;
+  width: 100%;
+  height: 128px;
   display: flex;
-  flex-direction: column;
   align-items: start;
   justify-content: start;
-  background-color: white;
-  color: #444;
-  border: 1px solid white;
-  border-radius: 8px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+  color: #CCC;
+  border-radius: 4px;
   padding: 0;
   overflow: hidden;
+  transition: 0.1s ease-in-out;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
+}
+
+.episode-card-link {
+  text-decoration: none;
+  width: 100%;
+  display: block;
+
+}
+
+.episode-card-link:hover .episode-card {
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .episode-card-image {
-  width: 100%;
-  height: 200px;
+  width: 128px;
+  height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -63,19 +73,18 @@
 }
 
 .episode-card h5 {
-  font-family: "Iceland", sans-serif;
-  font-size: 32px;
-  color: #004AAD;
+  font-family: sans-serif;
+  font-size: 16px;
+  color: white;
   margin: 0;
 }
 
 .episode-description {
   width: 90%;
   min-height: 600px;
-  background-color: white;
-  color: #444;
-  border: 1px solid white;
-  border-radius: 8px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.2);
+  background-color: #333;
+  color: #CCC;
+  border-radius: 4px;
   padding: 32px;
+  box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.4);
 }

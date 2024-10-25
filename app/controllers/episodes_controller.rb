@@ -1,5 +1,5 @@
 class EpisodesController < ApplicationController
-
+  before_action :authenticate_user!, except: [:index, :show]
   def index
     @episodes = Episode.all
   end
@@ -22,7 +22,7 @@ class EpisodesController < ApplicationController
   end
 
   def edit
-
+    set_episode
   end
 
   def update
