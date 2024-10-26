@@ -1,0 +1,24 @@
+h1 {
+  font-size: 80px;
+}
+
+h3 {
+  font-size: 32px;
+}
+
+h1, h3, h5 {
+  margin: 0;
+  color: white;
+  font-family: "Tiny5", sans-serif;
+  text-shadow: 2px 2px 0 black;
+  width: 100%;
+}
+
+p {
+  color: #ccc;
+  margin: 0;
+}
+
+* {
+  text-decoration: none;
+}

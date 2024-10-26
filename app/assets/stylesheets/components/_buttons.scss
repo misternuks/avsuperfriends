@@ -1,24 +1,10 @@
-.outline-button {
-  border: 2px solid white;
-  transition: 0.1s ease-in-out;
-}
-
 .outline-button:hover {
   border: 2px solid #ffde59;
   color: #ffde59;
   transform: scale(1.04);
 }
 
-.blue-button {
-  background-color: #004aad;
-}
-
-.blue-button:hover {
-  background-color: #7eaff0;
-  transform: scale(1.02);
-}
-
-.blue-button, .outline-button {
+.outline-button {
   min-width: 128px;
   padding: 8px 16px;
   color: white;
@@ -29,9 +15,27 @@
   box-sizing: border-box;
   display: inline-block;
   margin-top: 16px;
+  box-shadow: 2px 2px 0 black;
+  border: 2px solid white;
+  transition: 0.1s ease-in-out;
+  text-shadow: 2px 2px 0 black;
 }
 
 .yellow-button {
   background-color: #ffde59;
   color: #444;
+}
+
+.logo-button, .home-button{
+  font-size: 24px;
+  text-shadow: 1px 1px 0px black;
+  transition: 0.1s ease-in-out;
+}
+.logo-button {
+  color: white;
+}
+
+.logo-button:hover, .home-button {
+  color: #ffde59;
+  transform: scale(1.1);
 }

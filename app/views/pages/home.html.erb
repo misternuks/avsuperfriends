@@ -4,10 +4,27 @@
   <div class="banner-center">
     <%= image_tag("avsf_logo02.png", class: "banner-logo") %>
     <h1>AV SuperFriends</h1>
-    <h3>Podcasts about audio, video, and adapters</h3>
+    <h4>Podcasts about audio, video, and adapters</h4>
   </div>
   <div class="banner-right">
     <%= link_to "Listen now", episodes_path, class: "outline-button"  %>
+  </div>
+</div>
+<div class="links-row">
+  <h3 class="episode-heading">Listen on...</h3>
+  <div class="links-row-card">
+    <%= link_to "https://podcasts.apple.com/us/podcast/av-superfriends/id1535640876" do %>
+      <i class="fa-solid fa-podcast logo-button"></i>
+    <% end %>
+    <%= link_to "https://open.spotify.com/show/7HEnXzlv9onJTlEanGNbcU" do %>
+      <i class="fa-brands fa-spotify logo-button"></i>
+    <% end %>
+    <%= link_to "https://avsuperfriends.libsyn.com/rss" do %>
+      <i class="fa-solid fa-square-rss logo-button"></i>
+    <% end %>
+    <%= link_to "https://music.amazon.com/podcasts/ced27430-286c-4c5b-bd30-718677e35551/AV-SuperFriends" do %>
+      <i class="fa-brands fa-amazon logo-button"></i>
+    <% end %>
   </div>
 </div>
 <div class="episode-container">

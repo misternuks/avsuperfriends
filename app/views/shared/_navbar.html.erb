@@ -1,5 +1,7 @@
 <div class="navbar-avsf">
-  <%= link_to (image_tag("avsf_logo02.png", alt: "AVSF Logo", class: "navbar-logo")), root_path %>
+  <%= link_to root_path do %>
+    <i class="fa-solid fa-microphone-lines home-button"></i>
+  <% end %>
   <%= link_to "Episodes", episodes_path, class: "navbar-link" %>
   <span class="navbar-link">|</span>
   <%= link_to "Donate", root_path, class: "navbar-link" %>

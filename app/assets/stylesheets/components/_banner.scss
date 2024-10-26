@@ -1,5 +1,5 @@
 .banner-main {
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   align-items: end;
@@ -17,20 +17,6 @@
   align-items: center;
   justify-content: center;
   flex: 2;
-
-}
-
-.banner-center h1 {
-  font-size: 80px;
-  font-family: "Tiny5", sans-serif;
-}
-
-.banner-center h3 {
-  font-size: 32px;
-}
-
-.banner-center h1, h3 {
-  margin: 0;
 }
 
 .banner-left, .banner-right {

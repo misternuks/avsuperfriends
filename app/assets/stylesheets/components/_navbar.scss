@@ -1,6 +1,6 @@
 .navbar-avsf {
   display: flex;
-  align-items: center;
+  align-items: last baseline;
   justify-content: space-between;
   height: 60px;
   width: 100%;
@@ -10,10 +10,6 @@
   position: fixed;
   top: 0;
   overflow: visible;
-}
-
-.navbar-logo {
-  width: 40px;
 }
 
 .navbar-link, .navbar-menu {
